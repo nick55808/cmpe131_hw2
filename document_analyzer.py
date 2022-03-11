@@ -18,7 +18,6 @@ with open("document.txt", 'r') as file:
 			else:
 				dict[word] = 1
 	lst = sorted(dict, key=dict.get, reverse=True)[:5]
-	#lst = sorted(dict.iteritems(), key=operator.itemgetter(1), reverse=True)[:5]
 	for i in lst:
 		print(f'{i}: {dict[i]}')
 	#print(lst)
