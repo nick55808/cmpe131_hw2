@@ -1,6 +1,13 @@
 import time
 
-def calculate_time():
-	t = time.time()
-	print(f'Total time {t}')
-calculate_time()
+
+def calculate_time(t):
+	def wrapper():
+		print("Total time", t())
+	return wrapper
+
+@calculate_time
+def t():
+	return time.time()
+
+t()
