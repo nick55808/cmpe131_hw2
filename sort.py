@@ -16,4 +16,4 @@ def sort_list(lst):
 			i += 1
 	return lst 
 
-print (sort_list([1, 3, 2, 7]))
+#print (sort_list([1, 3, 2, 7]))
