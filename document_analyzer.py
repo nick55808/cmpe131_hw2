@@ -2,6 +2,7 @@
 dict = {} #creating dictionary
 
 with open("document.txt", 'r') as file: #opening the text file and setting it equal to file
+	
 	lst = []
 	for line in file:
 		for word in line.split():
@@ -15,6 +16,7 @@ with open("document.txt", 'r') as file: #opening the text file and setting it eq
 	x = lst[1]
 	#print(x[0],x[1])
 	#print(lst[1])
+	print('\r')
 	for i in range(5):
 		temp = lst[i]
 		print(f'{temp[0]}: {temp[1]}')
