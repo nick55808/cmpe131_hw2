@@ -19,5 +19,3 @@ with open("document.txt", 'r') as file: #opening the text file and setting it eq
 		temp = lst[i]
 		print(f'{temp[0]}: {temp[1]}')
 
-
-
